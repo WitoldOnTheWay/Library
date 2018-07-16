@@ -1,0 +1,20 @@
+export class BookModel{
+    id:number;
+    title:string;
+    authorid:number;
+    year:number;
+    language:string;
+    pages:number;
+    typeid:number;
+    cover:string;
+    constructor(Id?:number,Title?:string,AuthorId?:number,Year?:number,Language?:string,Pages?:number,TypeId?:number,Cover?:string){
+        this.id=Id;
+        this.title=Title;
+        this.authorid=AuthorId;
+        this.year=Year;
+        this.language=Language;
+        this.pages=Pages;
+        this.typeid=TypeId;
+        this.cover=Cover;
+    }
+}

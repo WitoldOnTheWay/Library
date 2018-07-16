@@ -1,0 +1,42 @@
+<h3>Dodaj książkę:</h3>
+
+<form>
+  
+    <div class="form-group col-md-6">
+      <label >Title</label>
+      <input [(ngModel)]="model.Title" name="Title" type="text" class="form-control"  placeholder="Title">
+    </div>
+    <div class="form-group col-md-6">
+      <label for="inputEmail4">AuthorId</label>
+      <input [(ngModel)]="model.AuthorId"name="AuthorId" type="number" class="form-control"  placeholder="AuthorId">
+    </div>
+    <div class="form-group col-md-6">
+      <label for="inputEmail4">Year</label>
+      <input [(ngModel)]="model.Year"name="Year" type="number" class="form-control"  placeholder="Year">
+    </div>
+    <div class="form-group col-md-6">
+      <label for="inputEmail4">Language</label>
+      <input [(ngModel)]="model.Language"name="Language"type="text" class="form-control"  placeholder="Language">
+    </div>
+    <div class="form-group col-md-6">
+      <label for="inputEmail4">Pages</label>
+      <input [(ngModel)]="model.Pages" name="Pages" type="number" class="form-control"  placeholder="Pages">
+    </div>
+    <div class="form-group col-md-6">
+      <label for="inputEmail4">TypeId (1-Novel,2-Poem,3-Drama,4-Fiction,5-Prose)</label>
+      <input [(ngModel)]="model.TypeId" name="TypeId" type="number" class="form-control"  placeholder="TypeId">
+    </div>
+  
+  
+  <div class="form-group">
+    <div class="form-check">
+     
+      <label class="form-check-label" for="gridCheck">
+        
+      </label>
+    </div>
+  </div>
+  <button type="submit" class="btn btn-primary" (click)=onSubmit();>Add Book</button>
+</form>
+
+

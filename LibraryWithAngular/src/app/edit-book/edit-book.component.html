@@ -1,0 +1,36 @@
+<h3>Edytuj książkę:</h3>
+
+<form>
+    <div class="form-group col-md-6">
+      <label >Title</label>
+      <input [(ngModel)]="book.Title" name="Title" type="text" class="form-control"  >
+    </div>
+    <div class="form-group col-md-6">
+      <label for="inputEmail4">AuthorId</label>
+      <input [(ngModel)]="book.AuthorId"name="AuthorId" type="number" class="form-control" >
+    </div>
+    <div class="form-group col-md-6">
+      <label for="inputEmail4">Year</label>
+      <input [(ngModel)]="book.Year"name="Year" type="number" class="form-control" >
+    </div>
+    <div class="form-group col-md-6">
+      <label for="inputEmail4">Language</label>
+      <input [(ngModel)]="book.Language"name="Language"type="text" class="form-control" >
+    </div>
+    <div class="form-group col-md-6">
+      <label for="inputEmail4">Pages</label>
+      <input [(ngModel)]="book.Pages" name="Pages" type="number" class="form-control"  >
+    </div>
+    <div class="form-group col-md-6">
+      <label for="inputEmail4">TypeId (1-Novel,2-Poem,3-Drama,4-Fiction,5-Prose)</label>
+      <input [(ngModel)]="book.TypeId" name="TypeId" type="number" class="form-control"  >
+    </div>
+  
+  <div class="form-group">
+    <div class="form-check">
+      <label class="form-check-label" for="gridCheck">
+      </label>
+    </div>
+  </div>
+  <button type="button" class="btn btn-primary" (click)=save(book);>Save Changes</button>
+</form>

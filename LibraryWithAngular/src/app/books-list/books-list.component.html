@@ -1,0 +1,17 @@
+<form class="form-inline my-2 my-lg-0">
+  <input class="form-control mr-sm-2" type="search" ng-model="searchfield"  placeholder="Search" aria-label="Search">
+  <button class="btn btn-outline-success my-2 my-sm-0" type="submit" (click)="searchevery()">Search</button>
+</form>
+
+
+<table border="1">
+<tr *ngFor="let book of booksList" ><td>{{book.Id}}</td><td> {{book.Title}}
+</td>
+<td>
+  <!--<img [src]=book.Cover  class="picture">-->
+</td>
+<td><button (click)=deleteBook(book.Id)>DELETE</button></td>
+<td><button (click)=editForm(book.Id)>EDIT</button></td>
+</tr>
+</table>
+
